@@ -1,10 +1,13 @@
 .navbar {
-  
+ 
   z-index: 1;
   width: 100%;
 
 
 
+}
+#navbarpos{
+  position: static;
 }
 
 .nav-item {
@@ -28,7 +31,7 @@
 
 section {
   z-index: -1 !important;
-margin: 30px;
+
 
 }
 
@@ -159,6 +162,7 @@ margin: 30px;
 @media screen and (min-width: 480px) {
   .menu-list {
     margin-left: 20%;
+    
   }
 
 
@@ -172,15 +176,34 @@ margin: 30px;
 
 @media screen and (max-width: 800px) {
   .logo {
-    padding: 10px !important;
-    font-size: 30px !important;
+    padding: 5px !important;
+    font-size: 26px !important;
   }
 
   .home_sec {
     height: 600px !important;
-    margin: 30px;
+    margin: 40px;
   }
-
+ #toggleBtn{
+  margin-left: 50px;
+  
+  
+ }
+ #navbarSupportedContent{
+  margin-right: 50px !important;
+  outline: none;
+  border: none !important;
+ }
+ h1{
+  font-size: 30px !important;
+  margin-top: 70px;
+ }
+ h3{
+  font-size: 20px !important;
+ }
+ h4{
+  font-size: 13px !important;
+ }
 
 
 
