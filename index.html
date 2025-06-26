@@ -88,7 +88,7 @@
                     <a href="#contact" class="btn btn-success">Contact</a>
 
 
-                    <a href="/Kumaravel MG.pdf" class="btn btn-outline-primary">My Resume
+                    <a href="Kumaravel MG.pdf" class="btn btn-outline-primary">My Resume
                         <i class="bi bi-file-earmark-pdf"></i>
                     </a>
                 </div>
@@ -347,27 +347,29 @@
                 <p>I had love to hear from you! If you have any questions, comments or feedback, Please use the form
                     below.</p>
             </div>
-            <div class="container">
-                <div class="mb-3">
-                    <label for="exampleFormControlInput1" class="form-label">Name</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1"
-                        placeholder="Enter your name">
-                </div>
-                <div class="mb-3">
-                    <label for="exampleFormControlInput1" class="form-label">Email address</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@gmail.com">
-                </div>
-                <div class="mb-3">
-                    <label for="exampleFormControlTextarea1" class="form-label">Comments</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                </div>
-                <a href="#" class="btn btn-success">
-                    <i class="bi bi-send"></i>
-                    Send </a>
-            </div>
+             <form action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="1c4f0840-7dc9-410c-9e11-e6eb9014238a">
 
-        </div>
-
+                <div class="container">
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Name</label>
+                        <input required name="name" type="text" class="form-control" id="name"
+                            placeholder="Enter your name" />
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                        <input required name="email" type="email" class="form-control" id="email"
+                            placeholder="name@gmail.com" />
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Comments</label>
+                        <textarea name="message" class="form-control" id="comments" rows="3" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-success">
+                        <i class="bi bi-send"></i>
+                        Send </button>
+                </div>
+            </form>
     </section>
     <hr>
     <section class="">
